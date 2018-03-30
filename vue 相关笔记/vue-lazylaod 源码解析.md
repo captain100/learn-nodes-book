@@ -7,4 +7,4 @@
 
 
 ### 参考的文档
- [Vue原理解析之observer模块]('https://segmentfault.com/a/1190000008377887')
+ [Vue原理解析之observer模块](https://segmentfault.com/a/1190000008377887)

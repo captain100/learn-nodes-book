@@ -10,8 +10,8 @@
 
 #### vue-lazyload 重要做的工作
 
-1.  vue-lazyload 是通过  指令的方式实现的，在 install 注册定义指令 v-lazy、v-lazy-container
-2.  指令被 bind 时  会创建 listener，并将其添加到 listener queue 里面，并且  搜索 target dom 节点，为其注册 dom 事件
+1.  vue-lazyload 是通过指令的方式实现的，在 install 注册定义指令 v-lazy、v-lazy-container
+2.  指令被 bind 时会创建 listener，并将其添加到 listener queue 里面，并且搜索 target dom 节点，为其注册 dom 事件
 3.  上面的 dom 事件回调中，会判断 listener queue 里的 listener，判断此 listener 绑定的 dom 是否处于 preload 的位置，如果处于则异步加载图片资源
 4.  同时 listener 会在当前图片加载过程中的 loading、loaded、error 三种状态出发当前 dom 的函数，分别渲染三种状态下的 dom 的内容
 

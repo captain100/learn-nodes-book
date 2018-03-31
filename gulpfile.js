@@ -7,7 +7,7 @@ gulp.task('git:add', function() {
 });
 
 gulp.task('git:commit', function() {
-    return gulp.src('.').pipe(git.commit('commit'));
+    return gulp.src('.').pipe(git.commit('auto commit'));
 });
 
 gulp.task('git:push', function(){

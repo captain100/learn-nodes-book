@@ -3,6 +3,7 @@
 
 ```javascript
 
+<!-- 转成数组对象的形式 -->
 function mapToArray(map) {
     Array.isArray(map) ? map.map(item => {
         return {key: item.key, val: item.val}
@@ -10,3 +11,5 @@
         return {key: item, val: map[item]}
     })
 }
+
+
